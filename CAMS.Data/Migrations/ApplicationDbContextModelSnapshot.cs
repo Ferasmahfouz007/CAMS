@@ -68,7 +68,7 @@ namespace CAMS.Data.Migrations
 
                     b.HasIndex("ServiceId");
 
-                    b.ToTable("Appointments");
+                    b.ToTable("Appointments", (string)null);
                 });
 
             modelBuilder.Entity("CAMS.Data.Models.AuditLog", b =>
@@ -97,7 +97,7 @@ namespace CAMS.Data.Migrations
 
                     b.HasIndex("PerformerId");
 
-                    b.ToTable("AuditLogs");
+                    b.ToTable("AuditLogs", (string)null);
                 });
 
             modelBuilder.Entity("CAMS.Data.Models.Notification", b =>
@@ -126,7 +126,7 @@ namespace CAMS.Data.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Notifications");
+                    b.ToTable("Notifications", (string)null);
                 });
 
             modelBuilder.Entity("CAMS.Data.Models.Role", b =>
@@ -191,7 +191,7 @@ namespace CAMS.Data.Migrations
 
                     b.HasIndex("ProviderId");
 
-                    b.ToTable("Services");
+                    b.ToTable("Services", (string)null);
                 });
 
             modelBuilder.Entity("CAMS.Data.Models.ServiceDate", b =>
@@ -212,7 +212,7 @@ namespace CAMS.Data.Migrations
 
                     b.HasIndex("ServiceId");
 
-                    b.ToTable("ServiceDates");
+                    b.ToTable("ServiceDates", (string)null);
                 });
 
             modelBuilder.Entity("CAMS.Data.Models.ServiceTimeSlot", b =>
@@ -234,7 +234,7 @@ namespace CAMS.Data.Migrations
 
                     b.HasIndex("ServiceDateId");
 
-                    b.ToTable("ServiceTimeSlots");
+                    b.ToTable("ServiceTimeSlots", (string)null);
                 });
 
             modelBuilder.Entity("CAMS.Data.Models.User", b =>
