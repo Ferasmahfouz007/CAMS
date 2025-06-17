@@ -3,6 +3,8 @@
 @{
     ViewData["Title"] = "@Model.Name  Details";
     string FormatDate(string rawDate) => rawDate.Replace("/", "_");
+    var userIdString = User.FindFirstValue(ClaimTypes.NameIdentifier);
+    int userId = int.Parse(userIdString);
 }
 
 <!-- Page Header Start -->
@@ -19,6 +21,9 @@
     </div>
 </div>
 <!-- Page Header End -->
+
+@if (userId == Model.ProviderId || User.IsInRole("Admin"))
+{
     <div class="row border border-2 rounded-4 mt-4 p-4 border border-primary border-opacity-50">
         <div class="column col-6 card-body d-flex flex-column justify-content-between">
 
@@ -102,6 +107,14 @@
         }
     </div>
 
+}
+else
+{
+    <h2 class="alert alert-warning">
+        <i class="bi bi-exclamation-triangle"></i>
+        404 Not Found
+    </h2>
+}
 <div>
     <a asp-action="Index" class="btn btn-outline-secondary mt-4">
         @* asp-route-id="@service.Id" used to select the service*@
