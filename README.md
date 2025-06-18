@@ -111,6 +111,12 @@ dotnet watch
 ### 🛎️ Manage Services
 ![Provider Manage Services image](CAMS.Web/wwwroot/images/screenshots/provider/manage_services_provider.PNG)
 
+### 🖋️ Edit Service
+![Provider Edit Service image](CAMS.Web/wwwroot/images/screenshots/provider/edit-service-provider.PNG)
+
+### 📋 Service Details
+![Provider Service Details image](CAMS.Web/wwwroot/images/screenshots/provider/service-details-provider.PNG)
+
 ## 🙍🏻‍♂️ Customer 
 
 ### 📅 Appointments (Home Page)
@@ -118,6 +124,9 @@ dotnet watch
 
 ### 📝 Book Appointment
 ![Customer Book Appointment image](CAMS.Web/wwwroot/images/screenshots/customer/book-appointment_customer.PNG)
+
+### 📋 Appointment Details
+![Customer Appointment Details image](CAMS.Web/wwwroot/images/screenshots/customer/appointment-details-customer.PNG)
 
 
 
